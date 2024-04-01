@@ -1,4 +1,4 @@
-import { EasterButton } from "@/lib/button/EasterButton";
+import { EasterButton } from "@/lib/components/button/EasterButton";
 import { previewButtons } from "@/lib/constants/previewButtons";
 import Image from "next/image";
 

@@ -1,4 +1,4 @@
-import { EasterButtonProps } from "../button/EasterButton";
+import { EasterButtonProps } from "../components/button/EasterButton";
 
 export const previewButtons: EasterButtonProps[] = [
     {

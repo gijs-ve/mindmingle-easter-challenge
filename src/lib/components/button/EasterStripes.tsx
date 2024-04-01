@@ -1,6 +1,6 @@
 
 import classNames from "classnames";
-import { stripeColors } from "../constants/stripeColors";
+import { stripeColors } from "../../constants/stripeColors";
 import { ComponentProps } from "react";
 
 export type EasterStripesProps = {
