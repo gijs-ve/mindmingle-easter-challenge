@@ -8,4 +8,4 @@ export const stripeColors = [
     'pink',
     'heavyRed',
     'cyan',
-] as const
+] as const;

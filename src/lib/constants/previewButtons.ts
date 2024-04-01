@@ -1,16 +1,16 @@
-import { EasterButtonProps } from "../components/button/EasterButton";
+import { EasterButtonProps } from '../components/button/EasterButton';
 
 export const previewButtons: EasterButtonProps[] = [
     {
-        text: "Next",
-        eggType: "stripes",
+        text: 'Next',
+        eggType: 'stripes',
     },
     {
         text: 'Submit',
-        eggType: 'stripes'
-    }, 
+        eggType: 'stripes',
+    },
     {
         text: 'Cancel',
-        eggType: 'stripes'
-    }
-]
+        eggType: 'stripes',
+    },
+];

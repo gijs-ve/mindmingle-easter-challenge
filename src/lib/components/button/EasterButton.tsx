@@ -1,28 +1,24 @@
-
-
-import classNames from "classnames";
-import { ComponentProps } from "react";
-import { EasterStripes } from "./EasterStripes";
+import classNames from 'classnames';
+import { ComponentProps } from 'react';
+import { EasterStripes } from './EasterStripes';
+import { Egg } from './Egg';
 
 export type EasterButtonProps = {
-  text?: string;
-  eggType: "stripes" | "spots";
-} & ComponentProps<"button">;
+    text?: string;
+    eggType: 'stripes' | 'spots';
+} & ComponentProps<'button'>;
 export const EasterButton = ({
-  text,
-  className,
-  eggType,
-  ...props
+    text,
+    className,
+    eggType,
+    ...props
 }: EasterButtonProps) => {
-  return (
-    <button
-      {...props}
-      className={classNames(
-        className,
-        "w-[70px] h-[100px] bg-white rounded-tl-[60%] rounded-tr-[60%] rounded-b-[40%] overflow-hidden",
-      )}
-    >
-     {eggType === "stripes" && <EasterStripes text={text} />}
-    </button>
-  );
+    return (
+        <button className="size-100 flex">
+            <Egg className={classNames(className)} eggType={eggType}>
+                {eggType === 'stripes' && <EasterStripes text={text} />}
+            </Egg>
+            <span className="h-24 w-full">{text}</span>
+        </button>
+    );
 };
