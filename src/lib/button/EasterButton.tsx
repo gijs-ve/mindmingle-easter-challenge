@@ -19,7 +19,7 @@ export const EasterButton = ({
       {...props}
       className={classNames(
         className,
-        "w-36 h-52 bg-white rounded-tl-[60%] rounded-tr-[60%] rounded-b-[40%] overflow-hidden",
+        "w-[70px] h-[100px] bg-white rounded-tl-[60%] rounded-tr-[60%] rounded-b-[40%] overflow-hidden",
       )}
     >
      {eggType === "stripes" && <EasterStripes text={text} />}

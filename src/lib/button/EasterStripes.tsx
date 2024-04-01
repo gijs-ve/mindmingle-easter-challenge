@@ -35,6 +35,8 @@ export const EasterStripes = ({ className, text, ...props }: EasterStripesProps)
       {stripes.map((value, index) => {
         const color = getColor(index);
         return <span key={index} className={classNames("h-1/5 min-w-full flex items-center justify-center", {
+            
+            'border-y-[1px] border-white': index === 2,
                 'bg-red-400': color === 'red',
                 'bg-orange-400': color === 'orange',
                 'bg-yellow-400': color === 'yellow',
