@@ -15,8 +15,8 @@ export default function Home() {
                 ))}
             </section>
             <div className="absolute bottom-0 flex w-full justify-center gap-4 bg-black p-2 text-center">
-                {linkItems.map(({ ...props }) => {
-                    return <LinkItem {...props} />;
+                {linkItems.map(({ ...props }, index) => {
+                    return <LinkItem {...props} key={index} />;
                 })}
             </div>
         </main>
