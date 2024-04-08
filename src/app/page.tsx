@@ -1,5 +1,6 @@
 import { EasterButton } from '@/lib/components/button/EasterButton';
 import { previewButtons } from '@/lib/constants/previewButtons';
+import Link from 'next/link';
 export const dynamic = 'force-dynamic';
 export default function Home() {
     return (
@@ -13,6 +14,11 @@ export default function Home() {
                     />
                 ))}
             </section>
+            <div className="absolute bottom-0 w-full bg-black text-center">
+                <Link href="https://github.com/gijs-ve/mindmingle-easter-challenge">
+                    Source
+                </Link>
+            </div>
         </main>
     );
 }
