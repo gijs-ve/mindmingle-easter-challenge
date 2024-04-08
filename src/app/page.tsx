@@ -14,11 +14,31 @@ export default function Home() {
                     />
                 ))}
             </section>
-            <div className="absolute bottom-0 w-full bg-black text-center">
-                <Link href="https://github.com/gijs-ve/mindmingle-easter-challenge">
-                    Source
-                </Link>
+            <div className="absolute bottom-0 flex w-full justify-center gap-4 bg-black p-2 text-center">
+                {linkItems.map(({ ...props }) => {
+                    return <LinkItem {...props} />;
+                })}
             </div>
         </main>
     );
 }
+const linkItems = [
+    {
+        href: 'https://github.com/gijs-ve/mindmingle-easter-challenge',
+        text: 'Source',
+    },
+    {
+        href: 'https://www.mindmingle.nl',
+        text: 'Mind Mingle',
+    },
+];
+const LinkItem = ({ href, text }: { href: string; text: string }) => {
+    return (
+        <Link
+            className="rounded-full border-2 bg-gray-800 p-4 hover:bg-gray-700"
+            href={href}
+        >
+            {text}
+        </Link>
+    );
+};
