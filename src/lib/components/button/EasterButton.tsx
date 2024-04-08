@@ -15,10 +15,9 @@ export const EasterButton = ({
 }: EasterButtonProps) => {
     return (
         <button className="size-100 flex">
-            <Egg className={classNames(className)} eggType={eggType}>
+            <Egg className={classNames(className)} type={eggType}>
                 {eggType === 'stripes' && <EasterStripes text={text} />}
             </Egg>
-            <span className="h-24 w-full">{text}</span>
         </button>
     );
 };

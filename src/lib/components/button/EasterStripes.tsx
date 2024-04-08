@@ -33,11 +33,14 @@ export const EasterStripes = ({
         _borderColor = getRandomColor();
     }
     const getColor = (index: number) => {
-        if (index === 0 || index === 4) {
+        if (index === 0) {
             return firstColor;
         }
         if (index === 1 || index === 3) {
             return secondColor;
+        }
+        if (index === 4) {
+            return _borderColor;
         }
         return middleColor;
     };
@@ -81,9 +84,7 @@ export const EasterStripes = ({
                                     borderColor === 'cyan' && index === 2,
                             },
                         )}
-                    >
-                        {index === 2 && text}
-                    </span>
+                    ></span>
                 );
             })}
         </>
